@@ -124,14 +124,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "datatests"
-version = "0.1.0"
-dependencies = [
- "datatest-stable",
- "to_cover",
-]
-
-[[package]]
 name = "heck"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -270,6 +262,9 @@ dependencies = [
 [[package]]
 name = "to_cover"
 version = "0.1.0"
+dependencies = [
+ "datatest-stable",
+]
 
 [[package]]
 name = "unicode-ident"
