@@ -10,8 +10,4 @@ fn call_fn_to_cover(_: &std::path::Path) -> datatest_stable::Result<()> {
 // }
 
 // coverage not generated when using datatest_stable::harness macro
-datatest_stable::harness!(
-    call_fn_to_cover,
-    ".",
-    r"test$",
-);
+datatest_stable::harness!(call_fn_to_cover, ".", r"\btest$",);
