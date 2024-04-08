@@ -1,0 +1,15 @@
+[package]
+name = "datatests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+datatest-stable = "0.2.3"
+to_cover = { path = "../to_cover" }
+
+[[test]]
+name = "datatest"
+harness = false
+
